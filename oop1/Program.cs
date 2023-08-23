@@ -1,5 +1,5 @@
 ﻿using System;
-
+/*
 class Arac // Temel sınıf
 {
     public string Marka;
@@ -52,7 +52,7 @@ class Bisiklet : Arac
 
     public void TekerlekSayisiniGoster()
     {
-        Console.WriteLine($"Bu bisikletin {TekerlekSayisi} tekerleği var.");
+        Console.WriteLine($"Bu motorunS {TekerlekSayisi} tekerleği var.");
     }
 }
 
@@ -72,9 +72,9 @@ class Program
         otomobil.Calistir();
         otomobil.KapiSayisiniGoster();
 
-        Bisiklet bisiklet = new Bisiklet("Giant", "Talon", 2023, "Kırmızı", 2);
+        Bisiklet bisiklet = new Bisiklet("BMW", "S1000RR", 2023, "Beyaz", 2);
 
-        Console.WriteLine("***** Bisiklet *****");
+        Console.WriteLine("***** Motor *****");
         Console.WriteLine($"Marka: {bisiklet.Marka}");
         Console.WriteLine($"Model: {bisiklet.Model}");
         Console.WriteLine($"Yıl: {bisiklet.Yil}");
@@ -85,3 +85,51 @@ class Program
         bisiklet.TekerlekSayisiniGoster();
     }
 }
+
+ */
+
+//-------------------------------------KAPSÜLLEME-------------------------------------
+
+/*
+public class Kapsulleme
+{
+    private String name;
+    private int age;
+    public int Kisiyasi
+    {
+        get { return age; }
+        set { age = value; }
+    }
+    public String Kisiadi
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+}
+class fka
+{
+     static void Main()
+    {
+        Kapsulleme k = new Kapsulleme();
+
+        k.Kisiadi = "Mert";
+        k.Kisiyasi = 22;
+
+
+        Console.WriteLine("İsim: "+k.Kisiadi);
+        Console.WriteLine("Yas: "+ k.Kisiyasi);
+
+    }
+
+
+}
+*/
+
+//------------------------------------------ABSTRACT--------------------------------------------------
+
+
+
+
+
+
